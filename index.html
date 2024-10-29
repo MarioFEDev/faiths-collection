@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faithie's Collection 💖</title>
+    <link rel="stylesheet" href="Poppins.css">
+    <style>
+        @keyframes slide-right{
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(100%);
+            }
+        }
+        @keyframes slide-right-alt {
+            from{
+                transform: translateX(-50%);
+            }
+            to{
+                transform: translateX(100%);
+            }
+        }
+        @keyframes slide-left{
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-102%);
+            }
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        :root {
+            --soft-rose-gold: #B76E79;
+            --muted-blush-pink: #F2D1D3;
+            --creamy-ivory: #FDF6EC;
+            --dusty-mauve: #A179A3;
+            --charcoal-grey: #4A4A4A;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: var(--soft-rose-gold);
+        }
+        body{
+            padding-bottom:100px ;
+        }
+        header{
+            width: 100%;
+            height: 80px;
+            background-color: var(--dusty-mauve);
+            color:var(--charcoal-grey);
+            font-family: poppins-extrabold;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+        .intro-sec {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background-color: var(--soft-rose-gold);
+        }
+        .intro {
+            width: 100%;
+            height: 450px;
+            background-color: #b76e79ad;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            position: relative;
+            color: black;
+            z-index: 2;
+        }
+        .intro-over {
+            transform: rotate(15deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-color: transparent;
+            z-index: -1;
+            opacity: 0.9; 
+            display: grid;
+            grid-auto-rows: 50%;
+            grid-template-columns: 1fr;
+            padding: .5em;
+            grid-gap: .35em;
+            background-color: var(--soft-rose-gold);
+        }
+        .intro-over > div{
+            background-color: transparent;
+            display: flex;
+            white-space: nowrap;
+            height: 100%;
+        }
+        .intro-over > div > div {
+            width: fit-content;
+            height: 100%;
+            background-color: transparent;
+            margin-right: 30px;
+            display: flex;
+        }
+        .intro-over > div > div > div{
+            height: 100%;
+            aspect-ratio: 1/1;
+            background-color: transparent;
+        }
+        .txt-con{
+            margin-right:60px ;
+            height: 100%;
+            width: 100%;
+            font-family: poppins-extrabold;
+            display: flex;
+            justify-content: right;
+            align-items: end;
+            flex-direction: column;
+            padding-left: 20px;
+            text-align: right;
+        }
+        h1{
+            font-size: 50pt;
+            margin-bottom:0px ;
+            width: 60%;
+        }
+        .txt-con > p{
+            margin-top: 2px;
+            width: 40%;
+        } 
+        .slide-right{
+            transform: translate(-50%);
+        }
+        .slide-right > div{
+            animation: slide-right 50s infinite linear ;  
+        }
+        .slide-left > div{
+            animation: slide-left 50s infinite linear; 
+        }
+        .btns{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btns a{
+            padding: .5em 1.3em;
+            font-family: poppins-bold;
+            font-size: 14pt;
+            margin: 1em 0 0 0;
+            border: 3px solid white;
+            border-radius: 5px;
+            transition: all .3s ease-in-out;
+        }
+        .btns a:hover{
+            transform: scale(1.07);
+        }
+        .whatsapp{
+            background: green;
+            color: white;
+        }
+        .whatsapp:hover{
+            color: green;
+            background-color: white;
+        }
+        .products{
+            background: var(--soft-rose-gold);
+            color: white;
+        }
+        .products:hover{
+            color: var(--soft-rose-gold);
+            background-color: white;
+        }
+        ::selection{
+            color: var(--dusty-mauve);
+            background-color: var(--creamy-ivory);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        Faithie's Collection
+    </header>
+    <section class="intro-sec">
+        <div class="intro">
+            <div class="txt-con">
+                <h1>Embrace pieces that tell your story</h1> 
+                <p>
+                    Explore Faith's Collections, shop for trendy accessories! your one-stop From stylish water bottles to vibrant beads, lip gloss, hair scarves, and more - discover something new every time!
+                </p>
+            </div>
+        </div>
+        <div class="intro-over">
+            <div class="slide-right">
+                <div class="first-right">
+                    <div><img src="acc1.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc2.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc13.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc15.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc5.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc10.jpg" alt="" width="100%" height="100%"></div>
+                </div>
+                <div class="second-right">
+                    <div><img src="acc1.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc2.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc13.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc15.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc5.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc10.jpg" alt="" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="slide-left">
+                <div class="first-left">
+                    <div><img src="acc3.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc14.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc12.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc1.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc2.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc4.jpg" alt="" width="100%" height="100%"></div>
+                </div>
+                <div class="second-left">
+                    <div><img src="acc3.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc14.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc12.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc1.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc2.jpg" alt="" width="100%" height="100%"></div>
+                    <div><img src="acc4.jpg" alt="" width="100%" height="100%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="btns">
+        <a class="whatsapp">Contact Me on Whatsapp</a>
+        <a href="products.html" class="products">Check Out My Products</a>
+    </section>
+
+
+
+
+
+</body>
+</html>
