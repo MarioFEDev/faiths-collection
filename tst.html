@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .slider{
+            width: 100%;
+            margin-top: 50px;
+            height: 350px;
+            white-space: nowrap;
+            overflow: scroll;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        .slider > div{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+        .d1{background-color:red;}
+        .d2{background-color:black;}
+        .d3{background-color:blue;}
+        .d4{background-color:purple ;}
+        .d5{background-color:orange;}
+
+        a{
+            font-size: 20pt;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="d1" id="d1"></div>
+        <div class="d2" id="d2"></div>
+        <div class="d3" id="d3"></div>
+        <div class="d4" id="d4"></div>
+        <div class="d5" id="d5"></div>
+    </div>
+    <a onclick="">prev</a> <a href="">next</a>
+
+
+
+    <script>
+
+        function prev(){
+            var ids = '#d3'
+            return ids
+            window.location.href = scrollTo
+        }
+    </script>
+</body>
+</html>

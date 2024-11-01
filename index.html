@@ -7,18 +7,10 @@
     <link rel="stylesheet" href="Poppins.css">
     <style>
         @keyframes slide-right{
-            from{
+            0%{
                 transform: translateX(0%);
             }
-            to{
-                transform: translateX(100%);
-            }
-        }
-        @keyframes slide-right-alt {
-            from{
-                transform: translateX(-50%);
-            }
-            to{
+            100%{
                 transform: translateX(100%);
             }
         }
@@ -42,6 +34,21 @@
             --creamy-ivory: #FDF6EC;
             --dusty-mauve: #A179A3;
             --charcoal-grey: #4A4A4A;
+            --rose-trans:#b76e7988;
+
+
+            --fc1:url(dress.jpg);
+            --fc2:url(dress.jpg);
+            --b1:url(dress.jpg);
+            --b2:url(dress.jpg);
+            --ba1:url(dress.jpg);
+            --ba2:url(dress.jpg);
+            --mc1:url(dress.jpg);
+            --mc2:url(dress.jpg);
+            --j1:url(dress.jpg);
+            --j2:url(dress.jpg);
+            --pc1:url(dress.jpg);
+            --pc2:url(dress.jpg);
         }
         html,body{
             padding: 0;
@@ -59,7 +66,7 @@
             height: 80px;
             background-color: var(--dusty-mauve);
             color:var(--charcoal-grey);
-            font-family: poppins-extrabold;
+            font-family: poppins-light;
             font-size: 40px;
             display: flex;
             align-items: center;
@@ -91,7 +98,7 @@
             height: 150%;
             background-color: transparent;
             z-index: -1;
-            opacity: 0.9; 
+            opacity: 0.9;
             display: grid;
             grid-auto-rows: 50%;
             grid-template-columns: 1fr;
@@ -137,15 +144,15 @@
         .txt-con > p{
             margin-top: 2px;
             width: 40%;
-        } 
+        }
         .slide-right{
             transform: translate(-50%);
         }
         .slide-right > div{
-            animation: slide-right 50s infinite linear ;  
+            animation: slide-right 50s infinite linear ;
         }
         .slide-left > div{
-            animation: slide-left 50s infinite linear; 
+            animation: slide-left 50s infinite linear;
         }
         .btns{
             display: flex;
@@ -186,6 +193,174 @@
             background-color: var(--creamy-ivory);
         }
 
+
+        .prod-disp{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fp{
+            text-align: center;
+            width: 100%;
+            font-family: poppins-regular;
+        }
+        .product-con{
+            margin: 0px;
+            margin-top: 40px;
+            border: 1px solid transparent;
+            width: 100%;
+            aspect-ratio: 5/4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2em;
+            background-size: cover;
+            background-position: center;
+            padding: 0 6%;
+
+        }
+        .product-con > div{
+            background-size: 110%;
+            background-position: center;
+            transition: all .3s ease-in-out;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 25pt;
+            border: 2px solid white;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        .product-con > div > *{
+            z-index: 1;
+        }
+        /* females clothing */
+        .prod1{
+           background-image: var(--fc1);
+        }
+        .prod1::after{
+            content: 'Check out our Female Clothing';
+        }
+        /* bags */
+        .prod2{
+           background-image: url(tote\ bags.jpg);
+           background-size: 110%;
+        }
+        .prod2::after{
+            content: "Check out our Bags";
+        }
+        /* bottles n accesories */
+        .prod3{
+           background-image: url(serv3.jpg);
+        }
+        .prod3::after{
+            content: "Check out our Bottle n' Accessories";
+        }
+        /* men clothing */
+        .prod4{
+           background-image: url(dress.jpg);
+        }
+        .prod4::after{
+            content: "Check out our Men's Clothing";
+        }
+        /* jewelry */
+        .prod5{
+           background-image: url(dress.jpg);
+        }
+        .prod5::after{
+            content: 'Check out our Jewelries';
+            padding: 0;
+            margin: 0;
+        }
+        /* perfumes n' cosmetics */
+        .prod6{
+           background-image: url(perfume.jpg);
+        }
+        .prod6::after{
+            content: "Check out our Perfumes n' Cosmetics";
+        }
+        .product-con > div > p{
+            font-size: 17pt;
+        }
+        .product-con > div:hover{
+            background-size: 115%;
+        }
+        .product-con > div:hover > p{
+            opacity: 0;
+        }
+        .product-con > div::before{
+            content: '';
+            position: absolute;
+            color: white;
+            font-family: rubik-light;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:var(--rose-trans);
+            transition: opacity .6s ease-in-out;
+            box-sizing: border-box;
+        }
+        .product-con > div::after{
+            position: absolute;
+            color: white;
+            font-family: poppins-light;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 17pt; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--rose-trans);
+            opacity: 0;
+            transition: opacity .6s ease-in-out;
+            box-sizing: border-box;
+            z-index: 3;
+        }
+        .product-con > div:hover::after{
+            opacity: 1;
+        }
+        .product-text{
+            width: 75%;
+            transition: all .6s ease-in-out;
+            text-align: center;
+            font-family:poppins-semibold;
+        }
+        .product-text::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .product-text::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .btn-con{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .button{
+            width:170px;
+            height: 48px;
+            background: transparent;
+            border: 3px solid black;
+            border-radius:1px ;
+        }
+
         @media  screen and (max-width : 970px) {
             h1{
                 width: 90%;
@@ -210,6 +385,11 @@
             .intro-over{
                 height: 110%;
             }
+
+            .product-con{
+                grid-template-columns: repeat(2, 1fr);
+                aspect-ratio: 5/9;
+            }
         }
         @media  screen and (max-width : 550px) {
             header{
@@ -228,7 +408,13 @@
             .intro{
                 padding-top: 50px;
                 height: 420px;
-            } 
+            }
+            .product-con{
+                grid-template-columns: repeat(1, 1fr);
+                aspect-ratio: 1/7;
+                width: 75%;
+            }
+
         }
         @media  screen and (max-width : 450px) {
             header{
@@ -257,8 +443,12 @@
             .btns a{
                 font-size: 10pt;
             }
+            .product-con{
+                padding: 0;
+                aspect-ratio: 1/9;
+            }
         }
-        
+
     </style>
 </head>
 <body>
@@ -268,7 +458,7 @@
     <section class="intro-sec">
         <div class="intro">
             <div class="txt-con">
-                <h1>Embrace pieces that tell your story</h1> 
+                <h1>Embrace pieces that tell your story</h1>
                 <p>
                     Explore Faith's Collections, shop for trendy accessories! your one-stop From stylish water bottles to vibrant beads, lip gloss, hair scarves, and more - discover something new every time!
                 </p>
@@ -318,9 +508,68 @@
         <a href="products.html" class="products">Check Out My Products</a>
     </section>
 
+    <section class="prod-disp">
+        <h1 class="fp">Featured Products</h1>
+        <div class="product-con">
+            <div class="prod1">
+                <p class="product-text">FEMALE<br>CLOTHING</p>
+            </div>
+            <div class="prod2">
+                <p class="product-text">BAGS</p>
+            </div>
+            <div class="prod3">
+                <p class="product-text">BOTTLES N'<br>ACCESSORIES</p>
+            </div>
+            <div class="prod4">
+                <p class="product-text">MEN'S<br>CLOTHING</p>
+            </div>
+            <div class="prod5">
+                <p class="product-text">JEWELRY</p>
+            </div>
+            <div class="prod6">
+                <p class="product-text">PERFUMES N'<br>COSMETICS</p>
+            </div>
+        </div>
+    </section>
 
 
 
 
+
+
+
+    <section class="slider-sec">
+        <div class="slider">
+        </div>
+    </section>
+
+    <script>
+        let position = 1
+        const prod1 = document.querySelector(".prod1")
+        const prod2 = document.querySelector(".prod2")
+        const prod3 = document.querySelector(".prod3")
+        const prod4 = document.querySelector(".prod4")
+        const prod5 = document.querySelector(".prod5")
+        const prod6 = document.querySelector(".prod6")
+
+        const fc1 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const fc2 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const b1 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const b2 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const ba1 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const ba2 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const mc1 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const mc2 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const j1 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const j2 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const pc1 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        const pc2 = getComputedStyle(root).getPropertyValue('--main-color').trim()
+        function changePics(){
+            if (position === 1){
+                prod1.style.backgroundImage = 
+            }
+        }
+        
+    </script>
 </body>
 </html>
