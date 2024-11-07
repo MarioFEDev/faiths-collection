@@ -69,9 +69,14 @@ header{
     padding: 7px;
 }
 .imgcon{
+    background: transparent;
     width:100%;
     aspect-ratio: 1/1;
     border: 0px solid transparent ;
+}
+img{
+    height: 100%;
+    aspect-ratio: 1/1;
 }
 .prod-txtcon{
     width: 100%;

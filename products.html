@@ -16,6 +16,9 @@
             display: flex;
             justify-content: right;
             padding-right: 23px;
+            position: sticky;
+            top: 0;
+            padding-top: 10px;
         }
         .cart{
             width: 60px;
@@ -63,15 +66,15 @@
         <a class="back" href="index.html">Back to Home</a>
     </div>
     <div class="cart-con">
-        <div class="cart">
+        <div class="cart" onclick="goToCart()">
             <div class="cartno">0</div>
-            <div class="carticon"><img src="carticon.png" alt="cart" width="100%" height="100%"></div>
+            <div class="carticon"><img src="carticon2.png" alt="cart" width="100%" height="100%"></div>
         </div>
     </div>
 
     <section class="prod-sec">
         <section>
-            <h1>BAGS</h1>
+            <h1>FEMALES CLOTHING</h1>
             <div class="product-grid">
                 <div class="product">
                     <div class="imgcon">
@@ -126,15 +129,39 @@
         </section>
 
         <section>
-            <h1>BAGS</h1>
+            <h1>MENS CLOTHING</h1>
             <div class="product-grid">
                 <div class="product">
                     <div class="imgcon">
-                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                        <img src="mikrtysonshirt.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="prod-txtcon">
-                        <p class="name">Tote Bags</p>
-                        <p class="pricing">2000</p>
+                        <p class="name">Mike Tyson Tee</p>
+                        <p class="pricing">22100</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="blacknwhittetss.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Black n' White Tees</p>
+                        <p class="pricing">13000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="redgraffitishirt.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Red Graffiti Shirt</p>
+                        <p class="pricing">4000</p>
                     </div>
                     <div class="prod-btncon">
                         <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
@@ -146,31 +173,7 @@
                     </div>
                     <div class="prod-txtcon">
                         <p class="name">Tote Bags</p>
-                        <p class="pricing">2000</p>
-                    </div>
-                    <div class="prod-btncon">
-                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="imgcon">
-                        <img src="acc4.jpg" alt="" width="100%" height="100%">
-                    </div>
-                    <div class="prod-txtcon">
-                        <p class="name">Tote Bags</p>
-                        <p class="pricing">2000</p>
-                    </div>
-                    <div class="prod-btncon">
-                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="imgcon">
-                        <img src="acc4.jpg" alt="" width="100%" height="100%">
-                    </div>
-                    <div class="prod-txtcon">
-                        <p class="name">Tote Bags</p>
-                        <p class="pricing">2000</p>
+                        <p class="pricing">2020</p>
                     </div>
                     <div class="prod-btncon">
                         <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
@@ -234,7 +237,115 @@
         </section>
 
         <section>
-            <h1>BAGS</h1>
+            <h1>BOTTLES AND ACCESORIES</h1>
+            <div class="product-grid">
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>PERFUMES AND COSMETICS</h1>
+            <div class="product-grid">
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="imgcon">
+                        <img src="acc4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="prod-txtcon">
+                        <p class="name">Tote Bags</p>
+                        <p class="pricing">2000</p>
+                    </div>
+                    <div class="prod-btncon">
+                        <button class="cart-btn" onclick="cartFunc(this)">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>JEWELRIES</h1>
             <div class="product-grid">
                 <div class="product">
                     <div class="imgcon">
@@ -288,19 +399,29 @@
         </section>
     </section>
 
+    <script src="products.js"></script>
     <script>
-
-        cartNo = document.querySelector('.cartno')
-        function cartFunc(button){
-            if(button.innerText === "Add To Cart"){
-                cartNo.innerText = parseInt(cartNo.innerText) + 1
-                button.innerText = "Remove From Cart"
-            }else if(button.innerText ===  "Remove From Cart"){
-                cartNo.innerText = parseInt(cartNo.innerText) - 1
-                button.innerText = "Add To Cart"
-            }
+        if(localStorage.getItem('BODY')){
+            document.querySelector('BODY').innerHTML = JSON.parse(localStorage.getItem('BODY'))
         }
+        const cartNo = document.querySelector('.cartno')
+        cartNo.innerText = productsArray.length;
+
+
+        function goToCart(){
+            window.location.href = "cart.html"
+            saveTheSavables()
+        }
+        function saveTheSavables(){
+            localStorage.setItem( 'BODY' ,JSON.stringify(document.querySelector('body').innerHTML))
+            localStorage.setItem('addedProducts', JSON.stringify(productsArray))
+            localStorage.setItem('addedProductsObj', JSON.stringify(productsInCart))
+        }
+
+        window.onbeforeunload = saveTheSavables;
+
     </script>
+
 </body>
 </html>
 
